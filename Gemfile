@@ -39,7 +39,8 @@ group(:integration) do
   gem "chef-provisioning-aws"
   gem "chef-rewind"
   gem "chef-sugar"
-  gem "chefspec"
+  # this must not be merged as is! https://github.com/sethvargo/chefspec/pull/708
+  gem "chefspec", git: "https://github.com/thommay/chefspec", branch: "og_solo"
   gem "halite"
   gem "poise"
   gem "knife-windows"
